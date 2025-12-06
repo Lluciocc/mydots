@@ -1,0 +1,114 @@
+/*Rice of Lluciocc*/
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+* {
+    all: unset;
+    font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+    font-size: 18px;
+    background: transparent;
+    text-shadow: none;
+}
+
+window {
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.823);
+
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.35);
+
+    min-width: 700px;
+    max-width: 750px;
+
+    animation: fadeIn 0.15s ease-out;
+}
+
+#inner-box {
+    margin: 2px;
+    padding: 5px;
+    border: none;
+}
+#outer-box {    
+    border: none;
+}
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+}
+
+#input {
+    all:unset;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
+    border-radius:10;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#input image {
+    border: none;
+    color: rgba(180, 210, 255, 0.9);
+    padding-right: 10px;
+}
+
+#input * {
+    border: none;
+    outline: none;
+}
+
+#input:focus {
+    outline: none;
+    border: none;
+
+    border-radius:10;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+#entry {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+#entry arrow {
+    border:none;
+    color: rgba(200, 220, 255, 0.8);
+}
+
+#entry:selected {
+    box-shadow: 1px 1px 5px rgba(255,255,255, .03);
+    border: none;
+    border-radius: 20px;
+    background-color:transparent;
+}
+
+#entry:selected #text {
+    color: rgb(208, 111, 249);
+}
+
+#entry:drop(active) {
+    background-color: rgba(200, 220, 255, 0.35) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+}

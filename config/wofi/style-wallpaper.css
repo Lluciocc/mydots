@@ -1,0 +1,92 @@
+/* Wofi Wallpaper Selector - Rice Style */
+
+* {
+    all:unset;
+    font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-shadow:none;
+    background-color:transparent;
+}
+
+window {
+    all:unset;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: rgba(17, 17, 27, 0.95);
+}
+
+#input {
+    all:unset;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: #cdd6f4;
+    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
+    border-radius:10;
+    background-color: rgba(30, 30, 46, 0.9);
+}
+
+#input image {
+    border: none;
+    color: #cdd6f4;
+    padding-right:10px;
+}
+
+#input:focus {
+    outline: none;
+    border: none;
+
+    border-radius:10;
+}
+
+#input * {
+    border: none;
+    outline: none;
+}
+
+#inner-box {
+    margin: 2px;
+    padding: 5px;
+    border: none;
+}
+
+#outer-box {    
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #cdd6f4;
+    outline: none;
+}
+
+#entry {
+    all:unset;
+    padding: 20 0 20 45;
+}
+
+#entry arrow {
+    border: none;
+    color: #b726f5;
+
+}
+
+#entry:selected {
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(200, 220, 255, 0.35);
+}
+
+#entry:selected #text {
+    color: rgb(208, 111, 249);
+}
+
+#entry:drop(active) {
+    background-color: #b726f5 !important;
+}

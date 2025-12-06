@@ -1,0 +1,16 @@
+# Config by lluciocc
+
+[config]
+allow_images=true
+show=drun
+width=800
+height=300
+always_parse_args=true
+show_all=true
+term=kitty
+hide_scroll=true
+print_command=true
+insensitive=true
+# Config of how many on screen
+columns=3
+image_size=100
