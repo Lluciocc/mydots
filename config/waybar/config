@@ -1,0 +1,160 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "height": 26,
+    "spacing": 5,
+
+    "modules-left": [
+      "custom/launcher",
+      "hyprland/window"
+    ],
+
+    "modules-center": [
+      "clock"
+    ],
+
+    "modules-right": [
+      "mpd",
+      "idle_inhibitor",
+      "temperature",
+      "network",
+      "pulseaudio",
+      "backlight",
+      "battery",
+      "battery#bat2",
+      "tray"
+    ],
+
+    "hyprland/window": {
+      "format": "{class}",
+      "max-length": 20,
+      "rewrite": {
+        "^(?!.*\\S).*": "Finder"
+      }
+    },
+
+    "custom/launcher": {
+      "format": "⮝",
+      "on-click": "wofi --show drun",
+      "tooltip": false
+    },
+
+    "mpd": {
+      "format": "  {title} - {artist} {stateIcon} [{elapsedTime:%M:%S}/{totalTime:%M:%S}]",
+      "format-disconnected": " Disconnected",
+      "format-stopped": " Stopped",
+      "state-icons": {
+        "paused": "",
+        "playing": ""
+      },
+      "interval": 2,
+      "tooltip-format": "MPD (connected)",
+      "tooltip-format-disconnected": "MPD (disconnected)",
+      "on-click": "mpc toggle",
+      "on-click-right": "foot -a ncmpcpp ncmpcpp",
+      "on-scroll-up": "mpc volume +2",
+      "on-scroll-down": "mpc volume -2"
+    },
+
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      }
+    },
+
+    "tray": {
+      "spacing": 10
+    },
+
+    "clock": {
+      "format": "{:%A %d %B %H:%M}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "temperature": {
+      "thermal-zone": 2,
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "critical-threshold": 80,
+      "format-critical": "{icon} {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""]
+    },
+
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": ["","","","","","","","",""]
+    },
+
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{icon} {time}",
+      "format-icons": ["","","","",""]
+    },
+
+    "battery#bat2": {
+      "bat": "BAT2"
+    },
+
+    "network": {
+      "format-wifi": "{essid} ({signalStrength}%) ",
+      "format-ethernet": " {ifname}",
+      "tooltip-format": " {ifname} via {gwaddr}",
+      "format-linked": " {ifname} (No IP)",
+      "format-disconnected": "Disconnected ⚠ {ifname}",
+      "format-alt": " {ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+      "scroll-step": 5,
+      "format": "{icon} {volume}%",
+      "format-bluetooth": " {icon} {volume}%",
+      "format-bluetooth-muted": "  {icon}",
+      "format-muted": "",
+      "format-source": " {volume}%",
+      "format-source-muted": "",
+      "format-icons": {
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol",
+      "on-click-right": "foot -a pw-top pw-top"
+    }
+  },
+
+  {
+    "layer": "top",
+    "position": "bottom",
+    "height": 41,
+    "width": 2,
+    "margin": "4",
+    "spacing": "5",
+
+    "modules-left": ["custom/os_button"],
+    "modules-center": ["sway/mode", "wlr/taskbar"],
+
+    "custom/os_button": {
+      "format": "⮝",
+      "on-click": "wofi --show drun",
+      "tooltip": false,
+      "icon-size": 36
+    },
+
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 36,
+      "spacing": 3,
+      "on-click": "activate",
+      "on-click-middle": "close",
+      "tooltip-format": "{title}",
+      "ignore-list": []
+    }
+  }
+]

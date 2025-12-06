@@ -1,0 +1,188 @@
+* {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  border: none;
+  border-radius: 1rem;
+  min-height: 0;
+  font-family: "CaskaydiaMono Nerd Font", monospace;
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+  color: #cdd6f4;
+  font-family: "CaskaydiaMono Nerd Font";
+  font-size: 12px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#workspaces button.active {
+  color: #89b4fa;
+  font-weight: bold;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-launcher,
+#custom-screenrecording-indicator,
+#custom-update,
+#network,
+#backlight,
+#temperature,
+#tray,
+#bluetooth {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 20px;
+}
+
+tooltip {
+  padding: 2px;
+  background: #313244;
+  border-radius: 4px;
+  color: #cdd6f4;
+  font-size: 11px;
+}
+
+#custom-update {
+  font-size: 10px;
+  color: #f9e2af;
+}
+
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+  color: #fab387;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #f38ba8;
+}
+
+#wlr-taskbar {
+  background-color: #1e1e2e;
+  padding: 4px 6px;
+  border-top: 1px solid #313244;
+}
+
+#wlr-taskbar button {
+  all: unset;
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+#wlr-taskbar button:hover {
+  background: #313244;
+}
+
+#wlr-taskbar button.active {
+  background: #45475a;
+}
+
+#wlr-taskbar button.minimized {
+  opacity: 0.6;
+}
+
+#custom-os_button {
+  padding: 0 8px;
+  font-size: 16px;
+  color: #89b4fa;
+}
+
+#custom-os_button:hover {
+  color: #b4befe;
+}
+
+#mpd {
+  color: #a6e3a1;
+}
+
+#mpd.playing {
+  color: #74c7ec;
+}
+
+#mpd.paused {
+  color: #f9e2af;
+}
+
+#battery.warning {
+  color: #f9e2af;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
+
+#battery.charging {
+  color: #a6e3a1;
+}
+
+#temperature {
+  color: #89dceb;
+}
+
+#pulseaudio {
+  color: #cba6f7;
+}
+
+#pulseaudio.muted {
+  color: #f38ba8;
+}
+
+#backlight {
+  color: #fab387;
+}
+
+#idle_inhibitor {
+  color: #94e2d5;
+}
+
+.modules-left > * + *,
+.modules-right > * + * {
+  border-left: 1px solid #313244;
+  margin-left: 6px;
+  padding-left: 6px;
+  border-radius: 50%;
+}
+
