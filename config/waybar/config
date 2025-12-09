@@ -7,7 +7,7 @@
 
     "modules-left": [
       "custom/launcher",
-      "hyprland/window"
+      "custom/music"
     ],
 
     "modules-center": [
@@ -33,6 +33,14 @@
         "^(?!.*\\S).*": "Finder"
       }
     },
+
+    "custom/music": {
+      "exec": "~/.config/waybar/music.sh",
+      "interval": 1,
+      "format": "{}",
+      "tooltip": false
+    },
+
 
     "custom/launcher": {
       "format": "⮝",

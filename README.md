@@ -10,3 +10,7 @@
 If you want to get my wallpapers:
 
 `cd ~/Pictures && git clone https://github.com/mylinuxforwork/wallpaper.git`
+
+## Wallpapers with wofi
+To make the script in `hypr/wallpaper.sh` works great, you can edit the bind 
+bind = $mainMod, J, exec, ~/.local/bin/wallpaper-picker.sh
