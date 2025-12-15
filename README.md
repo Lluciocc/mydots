@@ -17,7 +17,7 @@ To make the script in `hypr/wallpaper.sh` works great, you can edit the bind in 
 
 ## DIMG
 Simple script to download image an place it to the right folder    
-Made to work with my waybar wallpaper manager :)    
+Made to work with my wofi wallpaper manager :)    
 Usage: `dimg <url> [filename]`    
 
 ## Music with waybar

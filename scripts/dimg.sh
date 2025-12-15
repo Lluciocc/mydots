@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Simple script to download image an place it to the right folder
-# Made to work with my waybar wallpaper manager :)
+# Made to work with my wofi wallpaper manager :)
 # Usage: dimg <url> [filename]
 
 if [[ -z "$1" ]]; then
