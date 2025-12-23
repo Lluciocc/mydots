@@ -25,6 +25,7 @@ All custom script are located in `script/`
 Simple script to download image an place it to the right folder    
 Made to work with my wofi wallpaper manager :)    
 **Usage**: `dimg <url> [filename]`   
+**Example**: `dimg https://4kwallpapers.com/images/wallpapers/blue-abstract-3840x2160-24798.png wallpaper.png`
 
 ### Start
 Simple script that start a process in background        
