@@ -13,12 +13,20 @@ If you want to get my wallpapers:
 
 ## Wallpapers with wofi
 To make the script in `hypr/wallpaper.sh` works great, you can edit the bind in `hypr/hyprland.conf`:     
-`bind = $mainMod, J, exec, ~/.local/bin/wallpaper-picker.sh`   
-
-## DIMG
-Simple script to download image an place it to the right folder    
-Made to work with my wofi wallpaper manager :)    
-Usage: `dimg <url> [filename]`    
+`bind = $mainMod, J, exec, ~/.local/bin/wallpaper-picker.sh`    
 
 ## Music with waybar
 You must use spotify, look at the script at `waybar/music.sh` for code     
+
+## Additional Custom scripts
+All custom script are located in `script/`
+
+### DIMG
+Simple script to download image an place it to the right folder    
+Made to work with my wofi wallpaper manager :)    
+Usage: `dimg <url> [filename]`   
+
+### Start
+Simple script that start a process in background
+Usage: start <command> [args...]
+Example: start waybar
