@@ -24,9 +24,9 @@ All custom script are located in `script/`
 ### DIMG
 Simple script to download image an place it to the right folder    
 Made to work with my wofi wallpaper manager :)    
-Usage: `dimg <url> [filename]`   
+**Usage**: `dimg <url> [filename]`   
 
 ### Start
-Simple script that start a process in background 
-Usage: start <command> [args...] 
-Example: start waybar 
+Simple script that start a process in background        
+**Usage**: `start <command> [args...]`
+**Example**: `start waybar` 
