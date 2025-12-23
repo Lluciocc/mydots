@@ -14,6 +14,7 @@ If you want to get my wallpapers:
 ## Wallpapers with wofi
 To make the script in `hypr/wallpaper.sh` works great, you can edit the bind in `hypr/hyprland.conf`:     
 `bind = $mainMod, J, exec, ~/.local/bin/wallpaper-picker.sh`    
+**Note:** The script needs `jq` to work properly. `sudo pacman -S jq`       
 
 ## Music with waybar
 You must use spotify, look at the script at `waybar/music.sh` for code     
