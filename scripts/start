@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Usage: start <app> [args...]
+
+if [ $# -eq 0 ]; then
+  echo "Usage: start <command> [args...]"
+  exit 1
+fi
+
+proc="$1"
+
+if pgrep -x "$proc" > /dev/null 2>&1; then
+  echo "$proc est déjà lancé"
+  exit 0
+fi
+
+setsid "$@" >/dev/null 2>&1 < /dev/null &
