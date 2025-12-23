@@ -28,5 +28,5 @@ Made to work with my wofi wallpaper manager :)
 
 ### Start
 Simple script that start a process in background        
-**Usage**: `start <command> [args...]`
-**Example**: `start waybar` 
+**Usage**: `start <command> [args...]`                
+**Example**: `start waybar`           
